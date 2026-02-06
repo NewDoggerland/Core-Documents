@@ -4,6 +4,11 @@ This repository contains the **New Doggerland v0.5 governance and operations doc
 
 The stack is designed to be **mission-locked, capture-resistant, audit-native, and legible to external reviewers** (e.g., donors, DAFs, auditors), while clearly separating **binding authority** from **non-binding explanatory materials**.
 
+## Start here
+
+- Canonical map: MANIFEST.md
+- Latest published snapshot: v0.5.0 (see Releases)
+
 ## How to read this repo
 
 - **Authority comes only from the binding governance layer** (the Consolidated Governance Document and binding schedules/policies adopted under it).
