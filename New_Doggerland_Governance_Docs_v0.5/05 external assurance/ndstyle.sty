@@ -4,8 +4,10 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{microtype}
+\IfFileExists{lmodern.sty}{%
+  \usepackage{lmodern}
+  \usepackage{microtype}
+}{}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{parskip}

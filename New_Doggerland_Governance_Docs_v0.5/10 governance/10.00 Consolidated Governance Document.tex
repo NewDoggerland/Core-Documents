@@ -4,7 +4,7 @@
 \setcounter{tocdepth}{3}
 
 
-\title{New Doggerland - Consolidated Governance Document v0.5}
+\title{New Doggerland - Consolidated Governance Document v0.5.2}
 \author{}
 \date{}
 
@@ -15,6 +15,7 @@
 
 
 \section{Purpose and Mission Lock}
+\label{sec:mission-lock}
 
 New Doggerland exists solely to advance its stated charitable, welfare, and stewardship purposes. Assets, authority, and operations must not deviate from these purposes. No activity may undermine dog welfare, human dignity, or the long-term stewardship obligations of the organization. 
 No activity may be treated as undermining welfare, dignity, or stewardship solely because it imposes incidental, time-limited, or mitigated burdens that are necessary to prevent greater harm or to carry out mission-aligned duties under this document, provided the necessity basis is documented contemporaneously in the applicable log, interpretation note, or Recorded Decision Pathway.
@@ -148,6 +149,40 @@ The Steward’s Office must not:
 \end{itemize}
 For avoidance of doubt, the requirement that the Steward’s Office act mechanically and without discretion prohibits independent judgment, prioritization, or policy interpretation. This does not prohibit the minimal application of Bounded Discretion solely where explicitly required to execute a continuity function already authorized by this document, provided that such discretion is fully documented and remains strictly constrained to execution mechanics.
 
+
+Mutability: Unchangeable
+
+\subsection{Stewardship Appointment, Term, and Vacancy}
+\label{def:stewardship-appointment}
+
+The Steward is appointed by Supermajority vote of the Governing Body (as defined in Section~\ref{def:supermajority}).
+
+The Steward must satisfy all eligibility requirements for Stewardship defined in Section~\ref{def:stewardship}. Failure to meet any eligibility condition renders the appointment invalid.
+If an appointment is invalid under this subsection, any person may file an Eligibility Challenge Notice. Upon receipt, the Governing Body must (1) log the notice within twenty-four (24) hours, (2) determine eligibility within fourteen (14) days, and (3) record the determination and vote result. If ineligibility is confirmed, the Stewardship role is deemed vacant as of the determination timestamp, and any actions taken under Steward authority during the ineligible period must be reviewed under the Recorded Decision Pathway within thirty (30) days.
+
+The Steward serves a fixed term of thirty-six (36) months. The Steward may be reappointed for one additional consecutive term by Supermajority vote.
+
+The Steward may be removed for cause by Supermajority vote, subject to the same procedural safeguards applicable to Governing Body member removal under this document, including documented cause and a vote record.
+
+Cause for removal includes:
+\begin{itemize}
+\item failure or refusal to execute an explicitly authorized backstop function
+\item action outside the scope of Stewardship authority
+\item Credible Impairment (as defined in Section~\ref{def:credible-impairment}) preventing reliable service
+\item concealment of a Material Financial Interest (as defined in Section~\ref{def:material-financial-interest})
+\end{itemize}
+
+If the Stewardship role is vacant at the time a backstop function is triggered:
+\begin{itemize}
+\item the Governing Body must appoint an interim Steward within fourteen (14) days by Supermajority vote,
+\item until such appointment, the backstop function is held in abeyance unless immediate action is required to prevent irreversible harm, in which case a majority of the Governing Body may designate a qualified person to execute only the specific triggered function, subject to full logging and review.
+\end{itemize}
+
+For purposes of this subsection, "irreversible harm" means harm that cannot be materially remedied within thirty (30) days by lawful expenditure, medical intervention, or operational correction.
+
+If the Governing Body fails to appoint an interim Steward within fourteen (14) days due solely to inability to reach Supermajority, then on day fifteen (15) the Governing Body must either (1) appoint an interim Steward by simple majority for a maximum interim term of sixty (60) days, or (2) invoke the External Governance Arbiter mechanism, with the invocation logged and the reason stated.
+
+Upon term expiration, the Stewardship role becomes vacant unless the Steward has been reappointed before the expiration timestamp, in which case the new term begins immediately upon expiration.
 
 Mutability: Unchangeable
 
@@ -684,7 +719,7 @@ Shutdown, divestment, dissolution, or loss of control of any Controlled Subsidia
 
 The Governing Body may authorize shutdown or divestment by Supermajority vote under Section~\ref{def:supermajority} if any of the following conditions are met:
 \begin{itemize}
-\item the subsidiary materially undermines the Mission Lock in Section~1,
+\item the subsidiary materially undermines the Mission Lock in Section~\ref{sec:mission-lock},
 \item the subsidiary creates material welfare, dignity, safety, or stewardship risk as defined in Section~\ref{def:materially-affects},
 \item the subsidiary requires ongoing subsidy from New Doggerland in violation of Section~\ref{subsec:subsidiary-profit-policy},
 \item the subsidiary presents credible compliance risk that cannot be mitigated through narrower controls.
@@ -703,7 +738,7 @@ For purposes of this subsection, operational dominance exists if one or more of 
 \begin{itemize}
 \item the subsidiary accounts for a majority of consolidated gross revenue,
 \item the subsidiary accounts for a majority of consolidated payroll or headcount,
-\item the subsidiary’s contractual obligations or liabilities would materially constrain New Doggerland’s ability to comply with the Mission Lock in Section~1.
+\item the subsidiary’s contractual obligations or liabilities would materially constrain New Doggerland’s ability to comply with the Mission Lock in Section~\ref{sec:mission-lock}.
 \end{itemize}
 
 The dominance review must:
@@ -736,7 +771,9 @@ Mutability: Unchangeable
 \subsection{Governing Body Composition, Selection, and Removal}
 
 \subsubsection{Composition}
-The Governing Body must consist of an odd number of voting members. The Governing Body must have no fewer than five voting members.
+The Governing Body must consist of an odd number of voting members. The Governing Body must have no fewer than five (5) and no more than eleven (11) voting members.
+
+Any increase in the maximum number of voting seats beyond eleven (11) requires an Extraordinary Process (as defined in Section~\ref{def:extraordinary-process}).
 
 Mutability: Revisable
 
@@ -1215,7 +1252,9 @@ Operational Manuals may reference the Registry but must not expand, interpret, o
 \subsection{Emergency Authority Sunset}
 \label{subsec:emergency-authority-sunset}   
 
-All Emergency Authority definitions, including Emergency Scope Registry entries and any governance-approved emergency procedures, automatically expire twenty-four (24) months after approval unless explicitly reaffirmed by the Governing Body.
+All governance-approved emergency procedures and any Emergency Scope Registry entries adopted by Governance Schedule or Governing Body action automatically expire twenty-four (24) months after approval unless explicitly reaffirmed by the Governing Body.
+
+For avoidance of doubt, the Emergency Scope Registry entries defined inline in this document (E-001 through E-090, inclusive) are Unchangeable constitutional provisions and are not subject to expiration under this subsection. This sunset applies to governance-approved extensions, additions, or procedural elaborations of emergency authority, not to the constitutional baseline.
 
 Reaffirmation requires:
 \begin{itemize}
@@ -1223,6 +1262,8 @@ Reaffirmation requires:
 \item confirmation that the authority remains necessary and narrowly scoped
 \item revalidation or re-entry in the Emergency Scope Registry
 \end{itemize}
+
+Reaffirmation of any provision adopted by Extraordinary Process must itself occur by Extraordinary Process.
 
 If emergency authority expires due to non-reaffirmation, all actions must proceed only under ordinary role-scoped authority and applicable law. Any action taken to prevent imminent harm during such lapse must be logged as a Material Action and must be placed on the agenda of the next Governing Body meeting for review and reaffirmation decision.
 
@@ -1233,6 +1274,17 @@ Mutability: Unchangeable
 \label{subsec:continuity-authority}
 
 If the Governing Body lacks quorum and such loss persists beyond seven (7) consecutive days, a temporary Continuity Authority is automatically activated for the sole purpose of preventing imminent harm, maintaining legal compliance, and preserving animal welfare.
+
+Continuity Authority is exercised by the following persons, in order of priority:
+\begin{enumerate}
+\item the Executive Director (or equivalent senior executive), if one exists and is not subject to suspension, removal proceedings, or Credible Impairment;
+\item the Steward (as defined in Section~\ref{def:stewardship-appointment}), if no eligible Executive Director exists;
+\item in the absence of both, the remaining Governing Body members acting collectively by unanimous agreement of those present, solely for actions under this subsection.
+\end{enumerate}
+
+For purposes of this subsection, "equivalent senior executive" means the highest-ranking paid staff role designated in writing by the Governing Body in advance and recorded in the governance record. "Removal proceedings" begin only upon issuance of a written Removal Notice logged under the Recorded Decision Pathway.
+
+No person exercising Continuity Authority acquires governance authority, and all actions remain subject to the scope limitations and logging requirements of this subsection.
 
 Continuity Authority:
 \begin{itemize}
@@ -1499,7 +1551,7 @@ Primary logging restored.
 \textbf{Maximum Expiration:}  
 Seventy-two (72) hours to complete transcription.
 
-This Mutability designation applies to the Emergency Scope Registry in its entirety, including all Registry entries and controlled vocabularies.
+This Mutability designation applies to the Emergency Scope Registry provisions in this section, including all Registry entries and controlled vocabularies defined herein. Governance Schedule B (Emergency Scope Registry) declares its own mutability separately.
 
 Mutability: Unchangeable
 
@@ -1706,6 +1758,10 @@ A Foundational Phase activation record must include all of the following:
 \item the start date and automatic expiration date for the Foundational Phase.
 \end{itemize}
 
+Where the Primary Logging System (as required by Governance Schedule D) is not yet instantiated, the activation record must include a specific target date for transition from interim logging to a system satisfying the minimum integrity requirements of Schedule D. This target date must not exceed six (6) months from the Foundational Phase start date.
+
+If the transition target date passes without completion, the acting operator must log a breach within twenty-four (24) hours and place a remediation plan on the next Governing Body agenda, with a recorded vote on acceptance or amendment.
+
 A Foundational Phase must not:
 \begin{itemize}
 \item waive, suspend, or narrow any Unchangeable provision,
@@ -1734,8 +1790,6 @@ A Foundational Phase may be renewed only by an Extraordinary Process (as defined
 
 Mutability: Revisable only by Extraordinary Process
 
-
-Mutability: Unchangeable
 
 \section{Interpretation}
 
@@ -1838,6 +1892,10 @@ Each panel member is selected independently by:
 \item Stewardship
 \item Staff / External
 \end{itemize}
+
+If the organization's staff count is fewer than three (3) persons, or if the Stewardship role is vacant, the affected selection slot defaults to an external appointee selected by the appointing body from among persons who satisfy the independence requirements of an External Governance Arbiter (as defined in Section~\ref{def:external-governance-arbiter}), excluding current Governing Body members, the Founder, and the Founder Steward.
+
+This minimal-scale provision does not expand panel authority and terminates automatically when the staffing or vacancy condition is resolved.
 
 Mutability: Revisable
 
