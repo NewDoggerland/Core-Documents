@@ -7,14 +7,14 @@ The stack is designed to be **mission-locked, capture-resistant, audit-native, a
 ## Start here
 
 - Canonical map: MANIFEST.md
-- Latest published snapshot: v0.5.0 (see Releases)
+- Latest published snapshot: v0.5.2 (see Releases)
 
 ## How to read this repo
 
 - **Authority comes only from the binding governance layer** (the Consolidated Governance Document and binding schedules/policies adopted under it).
 - **Companion / vision / summaries are non-binding** and exist to improve clarity, orientation, and external legibility.
 - **Operational manuals are execution documents** and must remain subordinate to the binding governance layer.
-- If any conflict exists, **higher-order documents govern** (see the Consolidated Governance Document’s hierarchy and derivation rules).
+- If any conflict exists, **higher-order documents govern** (see the Consolidated Governance Document's hierarchy and derivation rules).
 
 ## Repository layout
 
@@ -70,7 +70,7 @@ pdflatex -interaction=nonstopmode "<filename>.tex"
 - **Planned relicensing (post-operational):** Once New Doggerland is operational, this repository is intended to be relicensed under **CC BY 4.0** to maximize adoption and reuse.
 
 ### Name & branding
-“New Doggerland” and any associated names/logos/marks are **not** licensed for reuse. Forks and derivatives must not represent themselves as New Doggerland or imply endorsement.
+"New Doggerland" and any associated names/logos/marks are **not** licensed for reuse. Forks and derivatives must not represent themselves as New Doggerland or imply endorsement.
 
 ### Contributions
 This repository is not accepting external contributions at this time.
