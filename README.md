@@ -1,7 +1,7 @@
-# Welcome to NewDoggerland's Core Documents
+# Core Documents
 
-This repository contains important documents related to NewDoggerland.
+Start here: MANIFEST.md
 
-## Latest published snapshot: v0.5.2
+Current package: New_Doggerland_Governance_Docs_v0.5/README.md
 
-Please refer to this document for the latest updates and information.
+Latest published snapshot: v0.5.2 (see Releases)
