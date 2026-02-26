@@ -1,0 +1,160 @@
+
+\documentclass[11pt]{article}
+\usepackage{ndstyle}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+\title{New Doggerland \\ Governance Schedules \\ Schedule D - Logging and Audit Integrity Policy}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\noindent
+\textbf{Status:} Binding Governance Policy \\
+\textbf{Authority:} Adopted by the Governing Body pursuant to the Consolidated Governance Document \\
+\textbf{Purpose:} Define the logging, auditability, and tamper-evident requirements for all governed actions \\
+\textbf{Precedence:} Subordinate to the Consolidated Governance Document; controlling where referenced \\
+\textbf{Mutability:} Revisable only by Extraordinary Process
+
+\section{Purpose}
+
+This Policy defines the minimum technical and procedural requirements for logging, record integrity, auditability, and retention across all systems governed by the New Doggerland governance framework.
+
+No action requiring logging under the Consolidated Governance Document may occur unless it can be logged in compliance with this Policy.
+
+\section{Scope}
+
+This Policy applies to:
+\begin{itemize}
+\item all Recorded Decision Pathways,
+\item all Material Actions,
+\item all emergency actions,
+\item all governance votes and approvals,
+\item any action explicitly required to be logged by policy or schedule.
+\end{itemize}
+
+\section{Core Logging Requirements}
+
+All governed log entries must include, at minimum:
+
+\begin{itemize}
+\item a unique entry identifier,
+\item timestamp (UTC),
+\item actor identity and role,
+\item authority relied upon,
+\item action description,
+\item affected scope objects (if any),
+\item linkage to related entries.
+\end{itemize}
+
+\section{Primary Logging System}
+
+The Primary Logging System must satisfy all of the following:
+
+\begin{itemize}
+\item append-only write model,
+\item immutable historical entries,
+\item cryptographic or checksum-based integrity verification,
+\item role-based access control,
+\item read access for authorized reviewers,
+\item export capability for audit.
+\end{itemize}
+
+No user may delete or overwrite a primary log entry.
+
+\section{Edit and Correction Protocol}
+
+Corrections to logged information must be made only by:
+
+\begin{itemize}
+\item creating a new log entry,
+\item referencing the original entry identifier,
+\item stating the correction and reason.
+\end{itemize}
+
+The original entry must remain intact and visible.
+
+\section{Offline and Emergency Logging}
+
+If the Primary Logging System is unavailable, actions may proceed only where explicitly permitted by policy.
+
+In such cases:
+
+\begin{itemize}
+\item an offline log stub must be created immediately,
+\item the stub must be physically or digitally tamper-evident,
+\item the stub must be ingested into the Primary Logging System within 72 hours of restored capability.
+\end{itemize}
+
+Where an Operational Manual specifies a shorter or longer ingestion window, the window defined in this Schedule controls.
+
+Failure to ingest an offline stub constitutes a violation.
+
+\section{Tamper-Evident Standards}
+
+A logging mechanism is considered tamper-evident only if:
+
+\begin{itemize}
+\item alterations are detectable,
+\item access is restricted and logged,
+\item integrity verification can be independently validated.
+\end{itemize}
+
+Procedures or systems that rely on trust alone do not satisfy this requirement.
+
+\section{Access Controls and Segregation of Duties}
+
+No individual may:
+
+\begin{itemize}
+\item both execute and approve the same logged action,
+\item both administer the logging system and authorize actions logged therein.
+\end{itemize}
+
+Access rights must be reviewed at least annually and upon role change.
+
+\section{Retention and Backup}
+
+All logs must be retained for a minimum of seven years unless a longer period is required by law or policy.
+
+Backup requirements:
+
+\begin{itemize}
+\item regular automated backups,
+\item off-site or logically isolated storage,
+\item periodic restoration testing.
+\end{itemize}
+
+\section{Audit and Review}
+
+Authorized auditors may:
+
+\begin{itemize}
+\item access read-only log exports,
+\item verify integrity checks,
+\item trace Recorded Decision Pathways end-to-end.
+\end{itemize}
+
+Obstruction of audit access constitutes a governance violation.
+
+\section{Interpretive Rule}
+
+This Policy must be interpreted narrowly. Where ambiguity exists, interpretation must favor:
+
+\begin{itemize}
+\item greater auditability,
+\item non-reversibility of log history,
+\item escalation rather than omission.
+\end{itemize}
+
+\section{Amendment}
+
+This Policy may be amended only through an Extraordinary Process as defined in the Consolidated Governance Document.
+
+All amendments must be recorded, versioned, and published alongside prior versions.
+
+\end{document}
