@@ -1,13 +1,13 @@
-# New Doggerland — Governance Docs v0.6.0
+# New Doggerland — Governance Docs v0.6.1
 
-This repository contains the **New Doggerland v0.6.0 governance and operations document stack**, written in LaTeX.
+This repository contains the **New Doggerland v0.6.1 governance and operations document stack**, written in LaTeX.
 
 The stack is designed to be **mission-locked, capture-resistant, audit-native, and legible to external reviewers** (e.g., donors, DAFs, auditors), while clearly separating **binding authority** from **non-binding explanatory materials**.
 
 ## Start here
 
 - Canonical map: MANIFEST.md
-- Latest published snapshot: v0.6.0 (see Releases)
+- Latest published snapshot: v0.6.1 (see Releases)
 
 ## How to read this repo
 
